@@ -1,0 +1,155 @@
+.home-container {
+  display: flex;
+  width: 100vw;
+  height: calc(100vh - 56px);
+  overflow: hidden;
+}
+
+.first-column, .second-column {
+  flex: 1;
+  padding: 50px;
+  padding-top: 60px;
+}
+
+.second-column, .third-column {
+  display: none;
+  position: relative;
+}
+
+.first-column, .third-column {
+  flex: 1;
+  padding: 50px;
+  padding-top: 60px;
+}
+
+.second-column {
+  max-height: 100%;
+  overflow-y: auto;
+  display: none;
+}
+
+.first-column {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.third-column {
+  max-height: 100%;
+  overflow-y: auto;
+  display: none;
+}
+
+.show-note-form .second-column {
+  display: block;
+  animation: slideInFromRight 0.5s ease-in-out;
+}
+.hide-note-form .second-column {
+  display: block;
+  animation: slideOutToRight 0.5s ease-in-out;
+}
+
+.show-preview .third-column {
+  display: block;
+  animation: slideInFromLeft 0.5s ease-in-out;
+}
+.hide-preview .third-column {
+  display: block;
+  animation: slideOutToLeft 0.5s ease-in-out;
+}
+
+.add-note-button {
+  cursor: pointer;
+  font-size: 40px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.add-note-button:active {
+  color: #c9c9c9;
+}
+
+.section-grid {
+  display: grid;
+  gap: 16px;
+  max-height: calc(100vh - 250px);
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.close-button{
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #555;
+  font-size: 35px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.close-button:active{
+  background-color: #3c3c3c;
+  font-weight: 500;
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutToRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideOutToLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}

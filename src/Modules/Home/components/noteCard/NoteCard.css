@@ -1,0 +1,39 @@
+.card-body {
+  height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-text td{
+  border: 1px solid;
+}
+
+.card-title {
+  flex: 0 0 auto;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  flex: 1 1 auto;
+}
+
+.note-card-icons{
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.note-button-container{
+  padding-block: 10px;
+  padding-right: 10px;
+}
+
+.selected {
+  border: 2px solid #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.neon-effect {
+  text-shadow: 1px 1px 2px #000000, 0 0 25px #772aea, 0 0 5px #7b2cf1;
+}

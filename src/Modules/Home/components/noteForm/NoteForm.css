@@ -1,0 +1,22 @@
+.form-field-login{
+  margin-top: 10px;
+}
+
+.multi-select {
+  z-index: 1;
+}
+
+.editor-container {
+  z-index: 0;
+  width: 100%;
+}
+
+.rmsc.dark {
+  --rmsc-main: #4285f4;
+  --rmsc-hover: #0e0c0a;
+  --rmsc-selected: #1d1915;
+  --rmsc-border: #ffffff;
+  --rmsc-gray: #b1b1b1;
+  --rmsc-bg: #262626;
+  color: #fff;
+}

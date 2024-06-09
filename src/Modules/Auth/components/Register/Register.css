@@ -1,0 +1,70 @@
+.title{
+  font-size: 35px;
+}
+
+.form-field{
+  display: flex;
+  flex-direction: column;
+  height: 90px;
+  .input-label{
+    text-align: start;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+
+.basic-button{
+  border-radius: 20px;
+  height: 40px;
+  border: none;
+  background-color: rgb(97, 97, 97);
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.basic-button:hover{
+  background-color: rgb(76, 76, 76);
+  color: #d2d2d2;
+}
+
+.field-icon-prefix{
+  position: absolute;
+  margin-left: 10px;
+}
+
+.field-icon-sufix{
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.input-with-icon{
+  padding-left: 35px;
+  
+}
+
+.password{
+  position: relative;
+}
+
+.input-with-icon{
+  border-radius: 20px;
+  height: 40px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.input-with-icon:focus{
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.field-error{
+  color: red;
+  font-size: small;
+}
