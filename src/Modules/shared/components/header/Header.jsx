@@ -20,7 +20,7 @@ export const Header = () => {
           <Nav className="me-auto"></Nav>
           <Nav>
             <NavDropdown title="Options" menuVariant="dark" style={{ marginInline: "60px" }} id="collapsible-nav-dropdown">
-              <NavDropdown.Item href="/login" onClick={handleLogout}>
+              <NavDropdown.Item href="/auth" onClick={handleLogout}>
                 Logout
               </NavDropdown.Item>
             </NavDropdown>
