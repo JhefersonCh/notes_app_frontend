@@ -11,7 +11,7 @@ export const NotePreview = ({ note }) => {
   return (
     <div className="w-100">
       <div className="d-flex justify-content-center mb-3">
-        <h1 className="d-flex">Preview of <span className="font-monospace text-danger fw-bold p-0 d-flex" style={{ marginLeft: "15px" }}>{note?.title || ''}</span></h1>
+        <h1 className="d-flex">Preview of <span className="text-danger fw-bold p-0" style={{ marginLeft: "15px" }}>{note?.title || '---'}</span></h1>
       </div>
       <article className="content-preview-container">
         <div className="mb-3">

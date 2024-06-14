@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import { Card } from 'react-bootstrap';
@@ -77,8 +78,8 @@ export const NoteCard = ({ note, setCurrentNote, setShowNoteForm, userId, setLoa
             className='note-card-icons'
             onClick={(e) => {
               e.preventDefault();
-              setShowPreview(note);
-              setShowNoteForm(null);
+              setShowPreview(true);
+              setShowNoteForm(false);
               setCurrentNote(note)
             }}
           />
@@ -88,7 +89,7 @@ export const NoteCard = ({ note, setCurrentNote, setShowNoteForm, userId, setLoa
               e.stopPropagation();
               setCurrentNote(note);
               setShowNoteForm(true);
-              setShowPreview(null);
+              setShowPreview(false);
             }} />
           <MdDeleteOutline
             className='note-card-icons'

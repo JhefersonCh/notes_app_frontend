@@ -1,4 +1,4 @@
-import { baseURL } from "../../../../environment.develpment";
+import { baseURL } from "../../../../environment.product";
 import api from "../../../config/index";
 import tokenService from "./tokenService";
 

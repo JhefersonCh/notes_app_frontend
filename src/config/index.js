@@ -3,9 +3,10 @@ import axios from "axios";
 import tokenService from "../Modules/shared/services/tokenService";
 import { toast } from "react-toastify";
 import navigationService from "../Modules/shared/services/navigationService";
+import { baseURL } from "../../environment.product";
 
 const api = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: baseURL,
 });
 
 api.interceptors.request.use((req) => {

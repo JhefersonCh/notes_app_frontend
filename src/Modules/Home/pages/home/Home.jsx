@@ -108,9 +108,7 @@ export const Home = () => {
             ></MdClear>
 
             <NotePreview
-              setShowPreview={setShowPreview}
               note={currentNote}
-              setCurrentNote={setCurrentNote}
             />
           </section>
         )}

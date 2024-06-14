@@ -1,0 +1,1 @@
+export const baseURL = "https://notesappbackend-production.up.railway.app/";

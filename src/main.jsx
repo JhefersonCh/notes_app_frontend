@@ -20,7 +20,7 @@ const router = createBrowserRouter(
     <Route path="/" element={<App />}>
       <Route path="/" element={<PrivateRoute element={<Home/>} />}></Route>
       <Route path="/auth" element={<Auth />}></Route>
-      <Route path="*" element={<Navigate to="/auth" replace />} />
+      <Route path="*" element={<Navigate to="/" replace />} />
     </Route>
   )
 );

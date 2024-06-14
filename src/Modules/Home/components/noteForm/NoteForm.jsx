@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import React, { useEffect, useRef, useState } from 'react';
 import { Editor } from '@tinymce/tinymce-react';
@@ -113,7 +114,7 @@ export const NoteForm = ({ setLoadNotes, loadNotes, currentNote, userId, setCurr
 
         <div className='mt-2 d-flex row'>
           <div className='col'>
-            <Button variant="primary" onClick={handleManageNote} className='w-100 rounded-4'>Complete</Button>
+            <Button variant="primary" onClick={handleManageNote} className='w-100 rounded-4'>{currentNote ? 'Update note' : 'Save note'}</Button>
           </div>
         </div>
       </form>

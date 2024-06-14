@@ -16,7 +16,7 @@ export const Login = ({ setShowRegister }) => {
   const [email, setEmai] = useState('');
   const [password, setPassword] = useState('');
 
-  const { setAuthentication } = useContext(AuthContext);
+  const { setAuthentication, user } = useContext(AuthContext);
 
   const navigate = useNavigate();
 
@@ -39,6 +39,7 @@ export const Login = ({ setShowRegister }) => {
       const userLogged = data?.data?.user;
       tokenService.setUser(userLogged);
       setAuthentication(userLogged)
+      console.log(user);
       return navigate("/")
     } catch (error) {
       return;
