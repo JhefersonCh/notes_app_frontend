@@ -2,12 +2,6 @@ body, html, #root, content {
   margin: 0;
   padding: 0;
   height: 100%;
-  color-scheme: light dark;
-}
-
-@media (prefers-color-scheme: dark) {
-  body, html, #root, content {
-    background-color: #333333;
-    color: #ffffff;
-  }
+  background-color: #333333;
+  color: #ffffff;
 }
