@@ -1,4 +1,4 @@
-import { baseURL } from "../../../../environment.product";
+import { baseURL } from "../../../environment.product";
 import api from "../../../config";
 
 class TokenService {

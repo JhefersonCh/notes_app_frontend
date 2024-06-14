@@ -1,5 +1,5 @@
 import api from "../../../config";
-import { baseURL } from "../../../../environment.product";
+import { baseURL } from "../../../environment.product";
 
 class UserSerice {
 
