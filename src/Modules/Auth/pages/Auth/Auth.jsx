@@ -4,12 +4,16 @@ import { Register } from "../../components/Register/Register";
 import "./Auth.css";
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 import { AuthContext } from "../../../../contexts/authContext";
+import authService from "../../../shared/services/authService";
 
 export const Auth = () => {
   const [showRegister, setShowRegister] = useState(false);
   const { user, setAuthentication } = useContext(AuthContext);
 
-  if(user) setAuthentication(null)
+  if(user) {
+    setAuthentication(null)
+    authService.logout()
+  }
 
   return (
     <div className="auth-container">
