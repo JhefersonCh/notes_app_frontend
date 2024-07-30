@@ -96,15 +96,16 @@ export const NoteForm = ({ setLoadNotes, loadNotes, currentNote, userId, setCurr
           <div className='d-flex align-items-center password'>
             <div className="editor-container">
               <Editor
+                tinymceScriptSrc='node_modules/tinymce/tinymce.min.js'
                 onInit={(_evt, editor) => contentRef.current = editor}
                 initialValue={currentNote?.content ?? ''}
-                apiKey='zihkwon6rwrhylq751dpeas0uczb7nflfp8jnnzfom1lbxkl'
+                // apiKey='zihkwon6rwrhylq751dpeas0uczb7nflfp8jnnzfom1lbxkl'
                 init={{
                   height: "250px",
                   skin: "oxide-dark",
                   content_css: "dark",
                   width: "100%",
-                  plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount linkchecker',
+                  plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount ',
                   toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
                 }}
               />
