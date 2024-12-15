@@ -1,1 +1,1 @@
-export const baseURL = "https://notesappbackend-production.up.railway.app/";
+export const baseURL = 'https://prod-back-noteshub.onrender.com/';
