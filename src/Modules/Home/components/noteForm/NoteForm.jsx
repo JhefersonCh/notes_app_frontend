@@ -114,13 +114,12 @@ export const NoteForm = ({
           <div className="d-flex align-items-center password">
             <div className="editor-container">
               <Editor
-                tinymceScriptSrc="node_modules/tinymce/tinymce.min.js"
+                tinymceScriptSrc="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.8.3/tinymce.min.js"
                 onInit={(_evt, editor) => (contentRef.current = editor)}
                 initialValue={currentNote?.content ?? ''}
                 // apiKey='zihkwon6rwrhylq751dpeas0uczb7nflfp8jnnzfom1lbxkl'
 
                 init={{
-                  license_key: 'gpl',
                   height: '250px',
                   skin: 'oxide-dark',
                   content_css: 'dark',

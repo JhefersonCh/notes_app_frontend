@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",
-    "@tinymce/tinymce-react": "^5.0.1",
+    "@tinymce/tinymce-react": "^5.1.1",
     "axios": "^1.7.2",
     "bootstrap": "^5.3.3",
     "dompurify": "^3.1.4",
@@ -31,7 +31,8 @@
     "react-table": "^7.8.0",
     "react-toastify": "^10.0.5",
     "react-transition-group": "^4.4.5",
-    "styled-components": "^6.1.11"
+    "styled-components": "^6.1.11",
+    "tinymce": "^7.6.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
