@@ -1,4 +1,4 @@
-# 📝 NoteHub - App Web de Notas y Tareas
+# 📝 Frontend - NoteHub - App Web de Notas y Tareas
 
 **NoteHub** es una aplicación web full stack que permite crear, editar y gestionar tareas de forma eficiente. Combina una interfaz moderna con funcionalidades robustas en el backend para brindar una experiencia de usuario completa y fluida.
 
